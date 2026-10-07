@@ -1,0 +1,9 @@
+# Python tooling: model download/training, data preparation, quantization, report, bindings tests.
+onnx==1.17.0
+onnxruntime==1.20.1
+numpy>=1.26,<3
+scikit-learn==1.5.2
+skl2onnx==1.17.0
+scikit-image==0.24.0
+pillow>=10,<12
+pytest>=8,<9
