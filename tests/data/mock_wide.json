@@ -1,0 +1,5 @@
+{
+  "inputs":  [{"name": "x", "shape": [1, 8]}],
+  "outputs": [{"name": "y", "shape": [1, 8]}],
+  "op": "identity"
+}

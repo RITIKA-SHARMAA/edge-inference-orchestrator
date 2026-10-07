@@ -1,0 +1,10 @@
+{
+  "inputs": {"x": [1, 4]},
+  "nodes": [
+    {"id": "left",  "model": "mock_slow.json", "backend": "mock", "inputs": {"x": "x"}},
+    {"id": "right", "model": "mock_slow.json", "backend": "mock", "inputs": {"x": "x"}},
+    {"id": "join",  "model": "mock_sum.json",  "backend": "mock",
+     "inputs": {"a": "left.y", "b": "right.y"}}
+  ],
+  "outputs": {"result": "join.y"}
+}

@@ -1,0 +1,7 @@
+# LeakSanitizer suppressions for the sanitizer build (EIO_SANITIZE=ON).
+#
+# ONNX Runtime allocates a few small global objects (its CPU-feature detection and
+# static initialisers) and never frees them. Loading libonnxruntime alone with
+# dlopen/dlclose, without any project code, reproduces the same report. Leaks in this
+# project's own code are not suppressed and still fail the tests.
+leak:libonnxruntime

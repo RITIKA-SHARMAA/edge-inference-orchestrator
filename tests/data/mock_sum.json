@@ -1,0 +1,5 @@
+{
+  "inputs":  [{"name": "a", "shape": [1, 4]}, {"name": "b", "shape": [1, 4]}],
+  "outputs": [{"name": "y", "shape": [1, 4]}],
+  "op": "sum"
+}
