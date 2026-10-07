@@ -1,0 +1,23 @@
+# Build output
+/build*/
+compile_commands.json
+.cache/
+
+# Downloaded or generated artefacts (recreate with the scripts)
+/models/
+/data/
+/samples/
+/results/
+*.onnx
+!tests/data/*.onnx
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
